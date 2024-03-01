@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #b0d4f6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav ul li.active a {
+    color: #008cba;
+  }
+  
+  .banner {
+    background-image: url('8.jpg');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner h2 {
+    font-size: 48px;
+    color: #e83030;
+    text-shadow: 2px 2px #333;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  .content {
+    padding: 50px;
+    text-align: justify;
+  }
+  
+  .content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    animation-fill
+  
